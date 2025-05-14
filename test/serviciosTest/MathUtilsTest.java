@@ -23,6 +23,13 @@ public class MathUtilsTest {
 		assertEquals(47, resultadoAdd);
 	}
 	
+	// La idea del metodo es que de error ya que da un resultado no puede dar decimales
+		@Test
+		public void addErrorDecimalTest() {
+			int resultadoAdd = mut.add(5, 4);
+			assertEquals(47,5, resultadoAdd);
+		}
+	
 	@Test
 	public void divideCorrectoTest() {
 		int resultadoDivide = mut.divide(10, 2);
